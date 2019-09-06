@@ -43,8 +43,8 @@ We will now complete these 4 steps in order to solve the <b>Perfect Squares</b> 
         
         int ans = INT_MAX;
         
-        for(int i = 1; i <= sqrt(x); i++) {
-          ans = min(ans, numSquares(x - i*i) + 1);
+        for(int i = 1; i <= sqrt(n); i++) {
+          ans = min(ans, numSquares(n - i*i) + 1);
         }
         
         return ans;
